@@ -2,6 +2,12 @@
 
 ## Architecture
 
+There _must_ be a configuration file, because there are too many per-module
+contingencies, such as AWS secrets for S3 buckets, that cannot be supplied
+via command-line options. Then again, this could be said for inputs too.
+
+This is a stupid project.
+
 - Input Plugins
   - Add protocols to the input URI
   - Generate this data structure:

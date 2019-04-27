@@ -5,22 +5,26 @@ import { URL } from "url";
 import { InputPlugin } from "./InputPlugin";
 
 const argv : object = yargs
-.option("pipeline", {
-    alias: "P",
-    default: []
-})
-.option("processing", {
-    alias: "p",
-    default: []
-})
-.option("outputs", {
-    alias: "o",
-    default: []
-})
-.option("log-level", {
-    alias: "l",
-    default: ""
-}).argv;
+    .option("input", {
+        alias: "i",
+        default: []
+    })
+    .option("pipeline", {
+        alias: "P",
+        default: []
+    })
+    .option("processing", {
+        alias: "p",
+        default: []
+    })
+    .option("output", {
+        alias: "o",
+        default: []
+    })
+    .option("log-level", {
+        alias: "l",
+        default: ""
+    }).argv;
 
 const USAGE : string =
 `
@@ -35,13 +39,9 @@ if (process.argv.length <= 1) { // I don't even know how this would be possible.
     process.exit(0);
 }
 
-const configurationLocation : string = "~";
-const configurationFile : string = ".scattergun.json";
-const configurationPath : string = path.join(configurationLocation, configurationFile);
-
 if (process.argv.length > 3) {
     // Ignore the scattergun file entirely.
-
+    if ()
 }
 
 // node ./index.js
