@@ -1,5 +1,13 @@
 # Scattergun
 
+Why I quit working on this:
+
+- There are plenty of per-application command-line uploader tools.
+- These could just be put in a shell script.
+- This is really difficult to design for very little benefit.
+
+Released under an MIT license.
+
 ## Architecture
 
 There _must_ be a configuration file, because there are too many per-module
