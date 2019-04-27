@@ -1,0 +1,13 @@
+{
+    "inputs": [
+        {
+            "uri": "file:///./test/data.txt"
+        }
+    ],
+    "processing": [],
+    "outputs": [
+        {
+            "uri": "s3://bucket"
+        }
+    ]
+}
